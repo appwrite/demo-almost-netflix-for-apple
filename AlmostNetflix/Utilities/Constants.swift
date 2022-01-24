@@ -36,14 +36,14 @@ class AppwriteCategory : Identifiable {
 let appwriteCategories: [AppwriteCategory] = [
     AppwriteCategory(
         id: "popular",
-    title: "Most Popular on AppwriteFlix",
+    title: "Most Popular on Almost Netflix",
     queries: [],
     orderAttributes: ["trendingIndex"],
     orderTypes: ["ASC"]
   ),
     AppwriteCategory(
       id: "originals",
-      title: "Only on AppwriteFlix",
+      title: "Only on Almost Netflix",
       queries: [
           Query.equal("isOriginal", value: true),
       ],
