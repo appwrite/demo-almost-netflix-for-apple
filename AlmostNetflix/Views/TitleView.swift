@@ -20,8 +20,14 @@ struct TitleView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 250.0)
-                    .padding(.bottom, 50.0)
+                    .padding(.bottom, 25.0)
                 
+                Text("Almost the best Netflix clone.")
+                    .foregroundColor(.white)
+                    .font(.title2)
+                    .bold()
+                    .padding(.top)
+                    .padding(.bottom, 40.0)
                 
                 NavigationLink(destination: LoginView(), tag: "Sign In", selection: $selection) {}
                     .navigationTitle("")
