@@ -16,18 +16,12 @@ struct TitleView: View {
         NavigationView {
             VStack {
                 
-                Text("Almost Netflix")
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-                    .bold()
-                    .padding(.top)
+                Image("AlmostNetflix")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 250.0)
+                    .padding(.bottom, 50.0)
                 
-                Text("Almost the best Netflix clone.")
-                    .foregroundColor(.white)
-                    .font(.title2)
-                    .bold()
-                    .padding(.top)
-                    .padding(.bottom)
                 
                 NavigationLink(destination: LoginView(), tag: "Sign In", selection: $selection) {}
                     .navigationTitle("")
